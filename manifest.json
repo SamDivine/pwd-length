@@ -1,0 +1,17 @@
+{
+	"name":"输入长度提示",
+	"version": "1.0.0",
+	"manifest_version": 2,
+	"description": "用来提示密码输入长度",
+	"content_scripts": [
+		{
+			"css": [ "css/jquery-ui.min.css" ],
+			"js": [ "js/jquery.min.js", "js/jquery-ui.min.js", "js/input-length.js"  ],
+			"matches": [ "*://*/*" ],
+			"run_at": "document_start"
+		}
+	],
+	"permissions": [
+		"activeTab"
+	]
+}
